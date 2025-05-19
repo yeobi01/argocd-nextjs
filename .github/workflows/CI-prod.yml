@@ -27,7 +27,7 @@ jobs:
           context: .
           platforms: linux/arm64 # or linux/arm64
           push: true
-          tags: ${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}:latest
+          tags: ${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}
       - name: --------------- Config Repo ---------------
         run: echo "[Config Repo]"
       - name: 🧱 Clone Kustomize Config Repo
