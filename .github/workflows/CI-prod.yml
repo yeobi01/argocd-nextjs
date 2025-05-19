@@ -42,7 +42,7 @@ jobs:
       - name: 📝 Config Repo 이미지 값 업데이트 (Kustomize)
         run: |
           cd config-repo/${{ env.APP_PATH }}
-          kustomize edit set image ${{ env.dockerimage_name }}:${{ env.dockerimage_tag }}
+          kustomize edit set image ${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}
       - name: ✅ Config Repo Commit & Push changes
         run: |
           cd config-repo
