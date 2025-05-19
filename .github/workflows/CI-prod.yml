@@ -25,7 +25,7 @@ jobs:
         uses: docker/build-push-action@v5.1.0
         with:
           context: .
-          platforms: linux/arm64 # or linux/arm64
+          # platforms: linux/arm64 # or linux/arm64
           push: true
           tags: ${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}
       - name: --------------- Config Repo ---------------
